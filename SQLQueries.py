@@ -10,7 +10,7 @@ def connect_with_database():
     global cursor
 
     try:
-        connection = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=(LocalDb)\\MSSQLLocalDB;PORT=1433;Database=Slingshot_LOCAL;Trusted_Connection=yes;')      
+        connection = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=(LocalDb)\\MSSQLLocalDB;PORT=1433;Database=Pathfinder_LOCAL;Trusted_Connection=yes;')      
     except :
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         db_path = os.path.join(BASE_DIR, r"databases\PathfinderDB.db")
